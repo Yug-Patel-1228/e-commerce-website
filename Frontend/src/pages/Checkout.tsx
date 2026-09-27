@@ -12,7 +12,7 @@ export function Checkout() {
   const cart = useCart();
   const [step, setStep] = useState(0);
   const [success, setSuccess] = useState(false);
-  useEffect(() => setSeo('Checkout Demo | VASIRA', 'Frontend-only VASIRA checkout demo.'), []);
+  useEffect(() => setSeo('Checkout Demo | ...', 'Frontend-only ... checkout demo.'), []);
 
   if (success) {
     return (

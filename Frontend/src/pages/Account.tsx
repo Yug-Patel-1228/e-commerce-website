@@ -5,13 +5,13 @@ import { setSeo } from '../utils/seo';
 export function Account() {
   const [mode, setMode] = useState<'login' | 'register'>('login');
   const [done, setDone] = useState(false);
-  useEffect(() => setSeo('Account | VASIRA', 'Frontend-only VASIRA account demo UI.'), []);
+  useEffect(() => setSeo('Account | ...', 'Frontend-only ... account demo UI.'), []);
 
   return (
     <section className="container-page grid gap-10 py-12 md:grid-cols-2 md:items-start">
       <div>
         <p className="mb-3 text-xs font-semibold uppercase tracking-[0.24em] text-accent">Account</p>
-        <h1 className="serif text-6xl md:text-8xl">Your VASIRA</h1>
+        <h1 className="serif text-6xl md:text-8xl">Your ...</h1>
         <p className="mt-5 max-w-lg leading-8 text-muted">
           This is a frontend-only account interface. Real authentication can be connected to a backend later.
         </p>

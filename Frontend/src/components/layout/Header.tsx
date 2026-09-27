@@ -48,7 +48,7 @@ export function Header() {
             <Menu size={22} />
           </button>
           <Link to="/" className="serif text-3xl font-semibold tracking-[0.22em] md:text-4xl" aria-label="VASIRA home">
-            VASIRA
+            ...
           </Link>
           <div className="flex items-center justify-end gap-1 md:gap-3">
             <Link to="/search" aria-label="Search" className="p-2">

@@ -28,7 +28,7 @@ export function Product() {
     if (product) {
       setSize(product.sizes[0]);
       setColor(product.colors[0]);
-      setSeo(`${product.name} | VASIRA`, product.description);
+      setSeo(`${product.name} | ...`, product.description);
     }
   }, [product]);
 

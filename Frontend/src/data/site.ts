@@ -5,7 +5,7 @@ export const siteConfig = {
   email: 'care@vasira.example',
   phone: '+91 98765 43210',
   whatsapp: '+91 98765 43210',
-  address: 'VASIRA Studio, New Delhi, India',
+  address: '... Studio, New Delhi, India',
 };
 
 export const socialImages = [

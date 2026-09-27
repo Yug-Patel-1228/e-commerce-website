@@ -26,7 +26,7 @@ export function MobileMenu({ open, onClose }: { open: boolean; onClose: () => vo
         >
           <div className="flex items-center justify-between border-b border-line px-5 py-4">
             <Link to="/" onClick={onClose} className="serif text-3xl tracking-[0.18em]">
-              VASIRA
+              ...
             </Link>
             <button type="button" aria-label="Close navigation" onClick={onClose} className="p-2">
               <X size={22} />

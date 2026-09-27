@@ -19,7 +19,7 @@ export function Collection() {
 
   useEffect(() => {
     if (collection) {
-      setSeo(`${collection.title} | VASIRA`, collection.description);
+      setSeo(`${collection.title} | ...`, collection.description);
     }
   }, [collection]);
 

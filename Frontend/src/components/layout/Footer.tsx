@@ -40,7 +40,7 @@ export function Footer() {
       <div className="container-page grid gap-10 py-14 md:grid-cols-[1.2fr_2fr]">
         <div>
           <Link to="/" className="serif text-4xl tracking-[0.18em]">
-            VASIRA
+            ...
           </Link>
           <p className="mt-5 max-w-sm text-sm leading-7 text-muted">
             Contemporary Indian fashion shaped by quiet craft, feminine silhouettes and modern occasion dressing.
@@ -72,7 +72,7 @@ export function Footer() {
       </div>
       <div className="border-t border-line">
         <div className="container-page flex flex-col gap-3 py-5 text-xs text-muted md:flex-row md:items-center md:justify-between">
-          <p>© 2026 VASIRA</p>
+          <p>© 2026 ...</p>
           <div className="flex flex-wrap gap-4">
             <Link to="/privacy-policy">Privacy Policy</Link>
             <Link to="/terms">Terms</Link>

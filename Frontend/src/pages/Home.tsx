@@ -15,14 +15,14 @@ export function Home() {
   const newArrivals = products.filter((product) => product.isNew).slice(0, 8);
 
   useEffect(() => {
-    setSeo('VASIRA | Contemporary Indian Fashion', 'Premium demo Indian fashion storefront for VASIRA.');
+    setSeo('... | Contemporary Indian Fashion', 'Premium demo Indian fashion storefront for ...');
   }, []);
 
   const subscribe = (event: React.FormEvent) => {
     event.preventDefault();
     if (!/^\S+@\S+\.\S+$/.test(email)) return;
-    const list = JSON.parse(window.localStorage.getItem('vasira-newsletter') ?? '[]') as string[];
-    window.localStorage.setItem('vasira-newsletter', JSON.stringify([...new Set([...list, email])]));
+    const list = JSON.parse(window.localStorage.getItem('...-newsletter') ?? '[]') as string[];
+    window.localStorage.setItem('...-newsletter', JSON.stringify([...new Set([...list, email])]));
     setJoined(true);
   };
 
@@ -31,7 +31,7 @@ export function Home() {
       <section className="relative min-h-[78vh] overflow-hidden bg-ink text-canvas">
         <img
           src="https://images.unsplash.com/photo-1616313253719-c46514cddee1?auto=format&fit=crop&w=1800&q=80"
-          alt="VASIRA editorial Indian fashion look"
+          alt="... editorial Indian fashion look"
           className="absolute inset-0 h-full w-full object-cover opacity-72"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-ink/70 via-ink/25 to-transparent" />
@@ -87,7 +87,7 @@ export function Home() {
             <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-accent">Designed in India</p>
             <h2 className="serif text-5xl leading-tight md:text-7xl">Quiet craft, modern occasion wear.</h2>
             <p className="mt-6 leading-8 text-muted">
-              VASIRA is a fictional designer-led label built for replacement with your real story, imagery and products.
+              ... is a fictional designer-led label built for replacement with your real story, imagery and products.
               The interface foregrounds editorial photography, considered spacing and practical e-commerce flows.
             </p>
           </div>
@@ -115,8 +115,8 @@ export function Home() {
         <SectionHeading title="Follow The Journey" subtitle="Discover the latest from VASIRA." />
         <div className="mt-10 grid grid-cols-2 gap-3 md:grid-cols-6">
           {socialImages.map((image) => (
-            <a key={image} href="https://www.instagram.com/vasira.example" className="group relative aspect-square overflow-hidden bg-sand">
-              <img src={image} alt="VASIRA social preview" loading="lazy" className="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+            <a key={image} href="https://www.instagram.com/...example" className="group relative aspect-square overflow-hidden bg-sand">
+              <img src={image} alt="... social preview" loading="lazy" className="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
               <span className="absolute inset-0 grid place-items-center bg-ink/30 text-canvas opacity-0 transition group-hover:opacity-100">
                 <Instagram />
               </span>
@@ -127,7 +127,7 @@ export function Home() {
 
       <section className="container-page py-20">
         <div className="bg-ink px-6 py-14 text-center text-canvas md:px-12">
-          <h2 className="serif text-5xl">Join The VASIRA List</h2>
+          <h2 className="serif text-5xl">Join The ... List</h2>
           <p className="mx-auto mt-4 max-w-xl text-sm leading-7 text-canvas/75">
             Be the first to discover new collections, private previews and special releases.
           </p>

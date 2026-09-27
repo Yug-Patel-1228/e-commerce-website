@@ -6,9 +6,9 @@ import { setSeo } from '../utils/seo';
 
 export function Search() {
   const [query, setQuery] = useState('');
-  const [recent, setRecent] = useState<string[]>(() => JSON.parse(window.localStorage.getItem('vasira-recent-searches') ?? '[]'));
+  const [recent, setRecent] = useState<string[]>(() => JSON.parse(window.localStorage.getItem('...-recent-searches') ?? '[]'));
 
-  useEffect(() => setSeo('Search | VASIRA', 'Search the VASIRA demo product catalog.'), []);
+  useEffect(() => setSeo('Search | ...', 'Search the ... demo product catalog.'), []);
 
   const results = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -24,7 +24,7 @@ export function Search() {
     if (!q) return;
     const next = [q, ...recent.filter((item) => item !== q)].slice(0, 5);
     setRecent(next);
-    window.localStorage.setItem('vasira-recent-searches', JSON.stringify(next));
+    window.localStorage.setItem('...-recent-searches', JSON.stringify(next));
   };
 
   return (

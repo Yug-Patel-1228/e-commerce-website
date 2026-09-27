@@ -5,7 +5,7 @@ import { setSeo } from '../utils/seo';
 
 export function Contact() {
   const [sent, setSent] = useState(false);
-  useEffect(() => setSeo('Contact | VASIRA', 'Contact the VASIRA demo studio.'), []);
+  useEffect(() => setSeo('Contact | ...', 'Contact the ... demo studio.'), []);
   return (
     <section className="container-page grid gap-10 py-12 md:grid-cols-[0.8fr_1fr]">
       <div>
@@ -14,7 +14,7 @@ export function Contact() {
           <p>Email: {siteConfig.email}</p>
           <p>Phone: {siteConfig.phone}</p>
           <p>WhatsApp: {siteConfig.whatsapp}</p>
-          <p>Instagram: @vasira.example</p>
+          <p>Instagram: @...example</p>
         </div>
       </div>
       <form

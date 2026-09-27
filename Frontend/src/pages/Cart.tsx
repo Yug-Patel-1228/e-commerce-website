@@ -7,14 +7,14 @@ import { setSeo } from '../utils/seo';
 
 export function Cart() {
   const cart = useCart();
-  useEffect(() => setSeo('Cart | VASIRA', 'Review your VASIRA demo shopping cart.'), []);
+  useEffect(() => setSeo('Cart | ...', 'Review your ... demo shopping cart.'), []);
 
   if (!cart.items.length) {
     return (
       <section className="container-page grid min-h-[55vh] place-items-center py-16 text-center">
         <div>
           <h1 className="serif text-6xl">Your cart is empty</h1>
-          <p className="mt-4 text-muted">Your selected VASIRA pieces will appear here.</p>
+          <p className="mt-4 text-muted">Your selected ... pieces will appear here.</p>
           <Link to="/shop" className="mt-8 inline-flex border border-ink px-8 py-4 text-xs font-semibold uppercase tracking-[0.18em]">
             Continue shopping
           </Link>

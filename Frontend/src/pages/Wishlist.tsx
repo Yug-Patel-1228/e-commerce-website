@@ -8,7 +8,7 @@ import { setSeo } from '../utils/seo';
 export function Wishlist() {
   const wishlist = useWishlist();
   const wished = products.filter((product) => wishlist.ids.includes(product.id));
-  useEffect(() => setSeo('Wishlist | VASIRA', 'Saved VASIRA demo products.'), []);
+  useEffect(() => setSeo('Wishlist | ...', 'Saved ... demo products.'), []);
 
   return (
     <section className="container-page py-12">

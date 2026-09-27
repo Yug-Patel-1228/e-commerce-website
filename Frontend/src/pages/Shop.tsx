@@ -10,7 +10,7 @@ export function Shop() {
   const filtered = useMemo(() => applyFilters(products, filters), [filters]);
 
   useEffect(() => {
-    setSeo('Shop All | VASIRA', 'Browse all VASIRA demo products with filters and sorting.');
+    setSeo('Shop All | ...', 'Browse all ... demo products with filters and sorting.');
   }, []);
 
   return (
@@ -19,7 +19,7 @@ export function Shop() {
         <p className="mb-3 text-xs font-semibold uppercase tracking-[0.24em] text-accent">Shop</p>
         <h1 className="serif text-6xl md:text-8xl">Shop All</h1>
         <p className="mt-4 leading-8 text-muted">
-          Discover sarees, lehengas, kurtas, dresses and modern festive sets from the VASIRA demo catalog.
+          Discover sarees, lehengas, kurtas, dresses and modern festive sets from the ... demo catalog.
         </p>
       </div>
       <FilterSort filters={filters} onChange={(next) => { setFilters(next); setVisible(12); }} products={products} />

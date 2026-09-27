@@ -16,13 +16,13 @@ const content: Record<string, { title: string; text: string[] }> = {
   },
   '/terms': {
     title: 'Terms',
-    text: ['VASIRA is a fictional brand used for a frontend demonstration.', 'Replace this copy with legal terms before production use.'],
+    text: ['... is a fictional brand used for a frontend demonstration.', 'Replace this copy with legal terms before production use.'],
   },
 };
 
 export function Policy({ path }: { path: keyof typeof content }) {
   const page = content[path];
-  useEffect(() => setSeo(`${page.title} | VASIRA`, page.text[0]), [page]);
+  useEffect(() => setSeo(`${page.title} | ...`, page.text[0]), [page]);
   return (
     <section className="container-page max-w-3xl py-16">
       <h1 className="serif text-6xl md:text-8xl">{page.title}</h1>
